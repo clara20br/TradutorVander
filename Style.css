@@ -44,3 +44,30 @@ body{
     font-size: 18px;
     color: rgb(10, 10, 85);
 }
+
+.caixaInterna{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+.idioma{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color: rgb(6, 67, 121);
+    color: rgb(228, 244, 253);
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+button{
+    border: none;
+    padding: 6px;
+    background-color: rgb(6, 67, 121);
+    color: rgb(228, 244, 253);
+    border-radius: 20px;
+}
+button:hover{
+    opacity: 0.9;
+}
