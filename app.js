@@ -14,3 +14,12 @@ async function traduzir(){
 
    texto_traducao.textContent = traducao.responseData.translatedText;
 }
+function microfone(){
+   let voz = window.SpeechRecognition || window.webkitSpeechRecognition;
+   let ouvirvoz = new voz();
+
+   ouvirvoz.onresult = (evento) =>{
+     inputTexto.value = evento.results[0][0].transcript;
+   }
+   ouvirvoz.start();
+}
